@@ -1,0 +1,63 @@
+  <!-- <nav class="navbar navbar-expand-lg" style="background-color: #00ABB3;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/emp/home/">Emp Mgmt Systm</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <form class="d-flex" method="GET" action="{% url 'search' %}">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <li class="nav-item">
+                    <a class="nav-link" href="/emp/add-emp/" style="font-weight: bold;">Add Employee</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/emp/home/" style="font-weight: bold;">View Table</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/emp/chart/" style="font-weight: bold;">View Chart</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="{% url 'logout' %}" style="font-weight: bold;">Logout</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00ABB3;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/emp/home/" style="font-weight: bold;">Employee Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Add search form -->
+                <form class="d-flex" method="GET" action="{% url 'search' %}">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/emp/add-emp/" style="font-weight: bold;">Add Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/emp/home/" style="font-weight: bold;">View Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/emp/chart/" style="font-weight: bold;">View Chart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}" style="font-weight: bold;">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
